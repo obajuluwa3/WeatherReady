@@ -1,14 +1,16 @@
 <h1>Register</h1>
-<form action="/users" method="POST">
-	<input type="text" placeholder="Name" name="name"/><br />
+<form action="/users/resgister" method="POST">
+	<input type="text" placeholder="First Name" name="firstname"/>
+	<input type="text" placeholder="Last Name" name="lastname"/><br />
 	<input type="text" placeholder="Username" name="username"/><br />
-	<input type="text" placeholder="Password" name="password"/><br />
+	<input type="password" placeholder="Password" name="password"/><br />
 	<input type="text" placeholder="City" name="city"/><br />
 	<input type="text" placeholder="State" name="state"/><br />
 	<input type="radio" name="gender" value="male"> Male
   	<input type="radio" name="gender" value="female"> Female<br />
 	<input type="text" placeholder="Paste picture URL here" name="pictureurl"/><br />
-	<input type="submit" value="Submit!"/>
+	<input type="submit" value="Create Account"/><br />
+	<a href="/users">back to login</a>
 </form>
 
 
