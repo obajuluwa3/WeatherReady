@@ -1,0 +1,10 @@
+Fonts used in this design;
+
+Font: Bebas Neue, 
+Author: Fontfabric, 
+Url: http://www.fontsquirrel.com/fonts/bebas-neue; 
+
+Font: Aller, 
+Author: Dalton Maag Ltd, 
+Url: http://www.fontsquirrel.com/fonts/Aller; 
+
