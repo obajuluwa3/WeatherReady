@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 
 require('./db/db');
 
-var VillainController = require('./controllers/VillainController');
+var UserController = require('./controllers/UserController');
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -16,7 +16,7 @@ app.set('view engine', 'hbs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/villains', VillainController);
+app.use('/users', UserController);
 
 server.listen(3000, function(){
 	console.log("Listening on port 3000");
