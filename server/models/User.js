@@ -10,6 +10,6 @@ var UserSchema = new mongoose.Schema({
 	pictureurl: String
 });
 
-var userModel = mongoose.model('User', VillainSchema);
+var userModel = mongoose.model('User', UserSchema);
 
 module.exports = userModel;

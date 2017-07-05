@@ -1,35 +1,14 @@
-<h1>Villains!</h1>
-<form action="/villains" method="POST">
-	<input type="text" placeholder="Name" name="name"/>
-	<input type="text" placeholder="Movie" name="movie"/>
-	<input type="text" placeholder="Super Power" name="power"/>
-	<input type="text" placeholder="Height" name="height"/>
+<h1>Register</h1>
+<form action="/users" method="POST">
+	<input type="text" placeholder="Name" name="name"/><br />
+	<input type="text" placeholder="Username" name="username"/><br />
+	<input type="text" placeholder="Password" name="password"/><br />
+	<input type="text" placeholder="City" name="city"/><br />
+	<input type="text" placeholder="State" name="state"/><br />
+	<input type="text" placeholder="Male/Female" name="clothing"/><br />
+	<input type="text" placeholder="Paste picture URL here" name="pictureurl"/><br />
 	<input type="submit" value="Submit!"/>
 </form>
-<table border="1">
-	{{#each villainsArray}}
-	<tr>
-		<td>
-			{{ this.name }}
-		</td>
-		<td>
-			{{ this.movie }}
-		</td>
-		<td>
-			{{ this.power }}
-		</td>
-		<td>
-			{{ this.height }}
-		</td>
-		<td>
-			EDIT
-		</td>
-		<td>
-			DELETE
-		</td>
-	</tr>
-	{{/each}}
-</table>
 
 
 

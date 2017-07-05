@@ -1,21 +1,22 @@
 var express = require('express');
 var router = express.Router();
-var Villain = require('../models/Villain');
+var User = require('../models/User');
 
 router.get('/', function(request, response){
-	Villain.find(function(err, villains){
-		console.log(villains);
-		response.render('home', {villainsArray: villains});
-	});
+	response.render('register')
 });
 
 router.post('/', function(request, response){
-	var villain = new Villain({name: request.body.name,
-								movie: request.body.movie,
-								power: request.body.power,
-								height: request.body.height});
-	villain.save();
-	response.redirect('/villains');
+	var user = new User({name: request.body.name,
+								username: request.body.username,
+								password: hash,
+								city: request.body.city,
+								state: request.body.state,
+								clothing: request.body.clothing,
+								pictureurl: request.body.pictureurl
+								});
+	user.save();
+	response.json(user);
 });
 
 module.exports = router;
