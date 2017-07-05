@@ -7,6 +7,13 @@ router.get('/', function(request, response){
 	response.render('login')
 });
 
+router.get('/profile/:id', function(request, response) {
+	var id = request.params.id
+	User.findById(id, function(error, user) {
+		response.render('profile', user)
+	})
+})
+
 router.post('/profile', function(request, response) {
 // 1. find the user with the corresponding email address
   // 2. check if the password on that user matches
@@ -17,7 +24,7 @@ router.post('/profile', function(request, response) {
       bcrypt.compare(request.body.password, user.password, function(error, match){
         if(match === true){
           // request.session.loggedIn = true;
-          response.redirect("/profile" + user._id);
+          response.redirect("./profile/" + user._id);
         }else{
           response.redirect('/users');
         }
@@ -46,12 +53,12 @@ router.get('/all', function(request, response){
 
 router.get('/:id', function(request, response) {
 	var id = request.params.id
-	User.findById(function(error, user) {
+	User.findById(id, function(error, user) {
 		response.json(user)
 	})
 })
 
-router.post('/register', function(request, response){
+router.post('/', function(request, response){
 	bcrypt.hash(request.body.password, 10, function(error, hash){
 		var user = new User({firstname: request.body.firstname,
 								lastname: request.body.lastname,
