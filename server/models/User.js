@@ -6,7 +6,7 @@ var UserSchema = new mongoose.Schema({
 	password: String,
 	city: String,
 	state: String,
-	clothing: String,
+	gender: String,
 	pictureurl: String
 });
 

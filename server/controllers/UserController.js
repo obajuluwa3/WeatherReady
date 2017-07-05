@@ -14,7 +14,7 @@ router.post('/', function(request, response){
 								password: hash,
 								city: request.body.city,
 								state: request.body.state,
-								clothing: request.body.clothing,
+								gender: request.body.gender,
 								pictureurl: request.body.pictureurl
 								});
 	user.save();
