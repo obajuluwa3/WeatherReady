@@ -2,16 +2,23 @@ var express = require('express');
 var router = express.Router();
 var User = require('../models/User');
 var bcrypt = require('bcrypt');
+var session = require('express-session');
 
 router.get('/', function(request, response){
 	response.render('login')
+	request.session.loggedIn = false;
 });
 
 router.get('/profile/:id', function(request, response) {
 	var id = request.params.id
-	User.findById(id, function(error, user) {
+	if (request.session.loggedIn) {
+		User.findById(id, function(error, user) {
 		response.render('profile', user)
 	})
+	} else {
+		response.render('login')
+	}
+	
 })
 
 router.post('/profile', function(request, response) {
@@ -23,7 +30,7 @@ router.post('/profile', function(request, response) {
     if(user){
       bcrypt.compare(request.body.password, user.password, function(error, match){
         if(match === true){
-          // request.session.loggedIn = true;
+          request.session.loggedIn = true;
           response.redirect("./profile/" + user._id);
         }else{
           response.redirect('/users');
@@ -70,7 +77,8 @@ router.post('/', function(request, response){
 								pictureurl: request.body.pictureurl
 								});
 	user.save();
-	response.json(user);
+	request.session.loggedIn = true;
+	response.redirect("/users/profile/" + user._id);
 	})
 });
 
