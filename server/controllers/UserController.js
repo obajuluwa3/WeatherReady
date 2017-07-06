@@ -71,8 +71,7 @@ router.post('/', function(request, response){
 								lastname: request.body.lastname,
 								username: request.body.username,
 								password: hash,
-								city: request.body.city,
-								state: request.body.state,
+								zipcode: request.body.zipcode,
 								gender: request.body.gender,
 								pictureurl: request.body.pictureurl
 								});
@@ -89,8 +88,7 @@ router.patch('/:id', function(request, response) {
 		user.lastname = request.body.lastname;
 		user.username = request.body.username;
 		user.password = request.body.password;
-		user.city = request.body.city;
-		user.state = request.body.state;
+		user.zipcode = request.body.zipcode;
 		user.gender = request.body.gender;
 		user.pictureurl = request.body.pictureurl;
 		user.save()
