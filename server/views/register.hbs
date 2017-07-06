@@ -1,16 +1,32 @@
-<h1>Register</h1>
-<form action="/users" method="POST">
-	<input type="text" placeholder="First Name" name="firstname"/>
-	<input type="text" placeholder="Last Name" name="lastname"/><br />
-	<input type="text" placeholder="Username" name="username"/><br />
-	<input type="password" placeholder="Password" name="password"/><br />
-	<input type="text" placeholder="Zip code" name="zipcode"/><br />
-	<input type="radio" name="gender" value="male"> Male
-  	<input type="radio" name="gender" value="female"> Female<br />
-	<input type="text" placeholder="Paste picture URL here" name="pictureurl"/><br />
-	<input type="submit" value="Create Account"/><br />
-	<a href="/users">back to login</a>
-</form>
+<div id="container">
+	
+	<div id="wrapper">
+	  <div class="header">
+		<h1>Weather <br />Ready</h1>
+		<h2>Register</h2>
+	  </div>
+	  <div class="main">
+		<form action="/users" id="registerForm" method="POST">
+			<input type="text" placeholder="First Name" name="firstname"/>
+			<input type="text" placeholder="Last Name" name="lastname"/>
+			<input type="text" placeholder="Username" name="username"/>
+			<input type="password" placeholder="Password" name="password"/>
+			<input type="text" placeholder="Zip code" name="zipcode"/>
+			<div class="radioBtns">
+				<p>Gender:</p>
+				<div class="gender"><input type="radio" name="gender" value="male">Male</div>
+			  	<div class="gender"><input type="radio" name="gender" value="female">Female</div>
+			</div>
+			<input type="text" placeholder="Paste picture URL here" name="pictureurl"/>
+			<input type="submit" class="btn" value="Create Account"/>
+		</form>
+	  </div>
+		<div class="footer">
+			<h3><a href="/users">back to login</a></h3>
+		</div>
+	</div>
+
+</div>
 
 
 
