@@ -1,0 +1,150 @@
+body {
+  font-family: Arial;
+}
+
+#name {
+  position: fixed;
+  right: 30px;
+}
+
+.temp-container {
+  display: flex;
+  flex-direction: row;
+  /*background-color: yellow;*/
+  width: 90%;
+  height: 140px;
+/*horizontally centers flex-items within flex-container*/
+  justify-content: space-around;
+/*vertically centers flex-items within flex-container*/
+  align-items: center;
+/*centers div on page */
+  position: absolute;
+  margin: auto;
+  top: 40px;
+  right: 0;
+  left: 0;
+}
+
+.temp-item {
+  /*background-color: pink;*/
+  width: 15%;
+  height: 60px;
+}
+
+p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#current {
+  height: 110px;
+  width: 30%;
+}
+
+.title {
+  font-size: 15px;
+}
+
+#numLow {
+  font-size: 40px;
+  padding: 0;
+}
+
+#numCurrent {
+  font-size: 60px;
+  padding: 0;
+}
+
+#numHigh {
+  font-size: 40px;
+  padding: 0;
+}
+
+#lowF {
+  font-size: 30px;
+}
+
+#highF {
+  font-size: 30px;
+}
+
+#currentF {
+  font-size: 50px;
+}
+
+.button-container {
+  display: flex;
+  width: 90%;
+  height: 60px;
+  /*background-color: orange;*/
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 260px;
+  right: 0;
+  left: 0;
+  align-items: center;
+}
+
+#button {
+  /*background-color: red;*/
+  width: 50%;
+  height: 40px;
+  border-radius: 9px;
+  text-align: center;
+  line-height: 40px;
+  border: black solid 1px;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3)
+}
+
+
+
+.outfit-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 320px;
+  /*background-color: purple;*/
+  position: absolute;
+  margin: auto;
+  top: 320px;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.outfit-item {
+  /*background-color: blue;*/
+  width: 60%;
+  height: 40px;
+}
+
+.subhead {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+
+.image {
+  /*background-color: fuchsia;*/
+}
+
+.image-container {
+  display: flex;
+  /*background-color: aqua;*/
+  width: 90%;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 200px;
+}
