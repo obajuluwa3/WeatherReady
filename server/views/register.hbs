@@ -1,24 +1,24 @@
 <div id="container">
 	
 	<div id="wrapper">
-	  <div class="header">
+	  <div class="header" id="logo">
 		<h1>Weather <br />Ready</h1>
-		<h2>Sign Up</h2>
 	  </div>
+	  <h2>Sign Up</h2>
 	  <div class="main">
 		<form action="/users" id="registerForm" method="POST">
-			<input type="text" placeholder="First Name" name="firstname"/>
-			<input type="text" placeholder="Last Name" name="lastname"/>
-			<input type="text" placeholder="Username" name="username"/>
-			<input type="password" placeholder="Password" name="password"/>
-			<input type="text" placeholder="Zip code" name="zipcode"/>
+			<input type="text" class="css-input" placeholder="First Name" name="firstname"/>
+			<input type="text" class="css-input" placeholder="Last Name" name="lastname"/>
+			<input type="text" class="css-input" placeholder="Username" name="username"/>
+			<input type="password" class="css-input" placeholder="Password" name="password"/>
+			<input type="text" class="css-input" placeholder="Zip code" name="zipcode"/>
 			<div class="radioBtns">
 				<p>Gender:</p>
 				<div class="gender"><input type="radio" name="gender" value="male">Male</div>
 			  	<div class="gender"><input type="radio" name="gender" value="female">Female</div>
 			</div>
-			<input type="text" placeholder="Paste picture URL here" name="pictureurl"/>
-			<input type="submit" class="btn" value="Create Account"/>
+			<input type="text" class="css-input" placeholder="Paste picture URL here" name="pictureurl"/>
+			<input type="submit" class="btn" id="registerBtn" value="Create Account"/>
 		</form>
 	  </div>
 		<div class="footer">

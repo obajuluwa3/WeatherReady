@@ -1,5 +1,44 @@
-<h1>Welcome {{firstname}}!</h1>
+<div id="container">
+	
+	<div id="wrapper">
+		<div class="heading">
+			<form action="/users" class="sessionForm" method="GET">
+				<input type="submit" class="btn" id="logoutBtn" value="Log out">
+			</form>
+			<p id="welcomeMsg">Welcome {{firstname}}!</p>
+		</div>
+		<div id="weatherInfo">
+			<div class="thirdCol col1">
+				<span id="city">Chicago</span>
+				<input type="submit" class="btn" id="newLocation" value="Change Location">
+				<h4>Monday</h4>
+				<span id="date">07/06/2017</span>
+			</div>
+			<div class="thirdCol col2">
+				<img src="/images/img-cloudy.png" height="80" width="130" class="weatherImg">
+				<h4>Partly Cloudy</h4>
+			</div>
+			<div class="thirdCol col3">
+				<p>Hi 18º Lo 25º</p>
+				<div class="degFlex"><span id="temp">22</span><span class="deg">º</span></div>
+			</div>
+		</div>
+		<div id="clothingInfo">
+			<h3>Recommended Outfits</h3>
+			<div id="outfitSection">
+				<img src="/images/navArrow.png" height="110" width="15" class="leftArrow">
+					<div id="outfits">Outfits</div>
+				<img src="/images/navArrow.png" height="110" width="15" class="rightArrow">
+			</div>
+		</div>
+		<div id="accessoriesInfo">
+			<h3>Recommended Accessories</h3>
+			<div id="accessoriesSection">
+				<img src="/images/navArrow.png" height="50" width="15" class="leftArrow">
+					<div id="accessories">Accessories</div>
+				<img src="/images/navArrow.png" height="50" width="15" class="rightArrow">
+			</div>
+		<div>
 
-<form action="/users" method="GET">
-	<input type="submit" value="Log out"><br>
-</form>
+	</div>
+</div>

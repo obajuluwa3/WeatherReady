@@ -3,11 +3,26 @@
 // }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
-p {
+p,h1,h2,h3,h4 {
 	margin: 0;
+	color: white;
+}
+
+.deg {
+	font-family: Arial;
+	color: white;
+	font-size: 3em;
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+
+.degFlex {
+	display: flex;
+	flex-directon: row;
+	align-items: flex-start;
 }
 
 #container {
@@ -16,6 +31,9 @@ p {
 	align-items: center;
 	height: 667px;
 	width: 375px;
+	background-image: url(../images/bgGradient.jpg);
+	background-repeat: repeat-x;
+	background-size: 5px 667px
 }
 
 #wrapper {
@@ -28,6 +46,15 @@ p {
 .header {
 	text-align: center;
 	padding-bottom: 10px;
+}
+
+#logo {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	color: white;
+	font-size: 1.5em;
+	line-height: 1.7em;
+	text-shadow: 0px 0px 10px #000000;
+	margin: 10px 0;
 }
 
 input {
@@ -58,6 +85,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0;
 }
 
 .btn {
@@ -74,4 +102,220 @@ form {
 	flex-direction: row;
 }
 
-.radioBtns
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+   -webkit-box-shadow: 0px 0px 3px #666666;
+  -moz-box-shadow: 0px 0px 3px #666666;
+  box-shadow: 0px 0px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: rgba(200,200,200,0.5);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: rgba(0,114,139,0.5);
+  text-decoration: none;
+}
+
+#registerBtn {
+	width: 200px;
+}
+
+.css-input {
+     padding: 4px;
+     font-size: 14px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: hidden;
+     border-radius: 4px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.36);
+     text-shadow:  0px 0px 5px px rgba(66,66,66,.75);
+}
+ .css-input:focus {
+     outline:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.heading {
+	 display: flex;
+	 flex-direction: row;
+	 height: 50px;
+	 width: 340px;
+	 justify-content: space-between;
+	 align-items: center;
+}
+
+.sessionForm {
+
+}
+
+#logoutBtn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+   -webkit-box-shadow: 0px 0px 3px #666666;
+  -moz-box-shadow: 0px 0px 3px #666666;
+  box-shadow: 0px 0px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  background: rgba(200,200,200,0.5);
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  width: 100px;
+  height: 25px;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+#logoutBtn:hover {
+  background: rgba(0,114,139,0.5);
+  text-decoration: none;
+}
+
+#weatherInfo {
+	 height: 175px;
+	 width: 330px;
+	 background-image: url(../images/weatherBg.png);
+	 background-size: 100% 100%;	
+	 background-repeat: no-repeat;
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: center;
+	 padding: 15px;
+}
+
+#newLocation {
+	width: 125px;
+	height: 20px;
+	font-size: 12px;
+	padding: 0 5px;
+	margin: 5px 0;
+	-webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+}
+
+.thirdCol {
+	display: flex;
+	flex-direction: column;
+}
+
+.col1 {
+	width:23%;
+	margin-left:0px;
+}
+
+.col2 {
+	width:42%
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+		margin-right:20px;
+}
+
+.col3 {
+	width:35%
+	display: flex;
+	align-items: flex-end;
+}
+
+#temp {
+	font-size: 5em;
+	margin-top: 15px;
+	color: white;
+	// font-weight: bold;
+}
+
+#city {
+	text-transform: uppercase;
+	// font-weight: bold;
+	font-size: 2.3em;
+	color: white;
+	height: 45px;
+	margin-top: -10;
+}
+
+#date {
+	font-size: 0.7em;
+	color: white;
+}
+
+.weatherImg {
+	margin-bottom: 3px;
+}
+
+#clothingInfo {
+	height: 240px;
+	width: 355px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#outfitSection {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 205px;
+	width: 340px;
+}
+
+#outfits {
+	width: 280px;
+	text-align: center;
+}
+
+.leftArrow {
+
+}
+
+.rightArrow {
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+#accessoriesInfo {
+	height: 100px;
+	width: 355px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#accessoriesSection {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 75px;
+	width: 340px;
+}
+
+#accessories {
+	width: 280px;
+	text-align: center;
+}
