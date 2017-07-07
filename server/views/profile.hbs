@@ -1,5 +1,5 @@
 <div id="container">
-	
+	<input type="hidden" name="zipHolder" id="zipCode" value={{zipcode}}>
 	<div id="wrapper">
 		<div class="heading">
 			<form action="/users" class="sessionForm" method="GET">
@@ -9,36 +9,77 @@
 		</div>
 		<div id="weatherInfo">
 			<div class="thirdCol col1">
-				<span id="city">Chicago</span>
-				<input type="submit" class="btn" id="newLocation" value="Change Location">
-				<h4>Monday</h4>
-				<span id="date">07/06/2017</span>
+				<span id="city"></span>
+				<input type="submit" class="btn" id="newLocationBtn" value="Change Location">
+				<h4 id="day"></h4>
+				<span id="date"></span>
 			</div>
 			<div class="thirdCol col2">
-				<img src="/images/img-cloudy.png" height="80" width="130" class="weatherImg">
-				<h4>Partly Cloudy</h4>
+				<img height="100" width="115" class="weatherImg">
+				<h4 id="description">Partly Cloudy</h4>
 			</div>
 			<div class="thirdCol col3">
-				<p>Hi 18º Lo 25º</p>
+				<p>Hi <span id="tempHi"></span> Lo <span id="tempLo"><span></p>
 				<div class="degFlex"><span id="temp">22</span><span class="deg">º</span></div>
 			</div>
 		</div>
 		<div id="clothingInfo">
 			<h3>Recommended Outfits</h3>
 			<div id="outfitSection">
-				<img src="/images/navArrow.png" height="110" width="15" class="leftArrow">
-					<div id="outfits">Outfits</div>
-				<img src="/images/navArrow.png" height="110" width="15" class="rightArrow">
+				<img src="/images/navArrow.png" height="50" width="15" class="leftArrow" id="prevOutfitBtn">
+					<div id="outfits">
+						<div><img src="/images/img1.png" height="150" width="150"></div>
+						<div><img src="/images/img2.png" height="150" width="150"></div>
+						<div><img src="/images/img3.png" height="150" width="150"></div>
+						<div><img src="/images/img4.png" height="150" width="150"></div>
+						<div><img src="/images/img5.png" height="150" width="150"></div>
+						<div><img src="/images/img6.png" height="150" width="150"></div>
+					</div>
+				<img src="/images/navArrow.png" height="50" width="15" class="rightArrow" id="nextOutfitBtn">
 			</div>
 		</div>
 		<div id="accessoriesInfo">
 			<h3>Recommended Accessories</h3>
 			<div id="accessoriesSection">
-				<img src="/images/navArrow.png" height="50" width="15" class="leftArrow">
-					<div id="accessories">Accessories</div>
-				<img src="/images/navArrow.png" height="50" width="15" class="rightArrow">
+				<img src="/images/navArrow.png" height="50" width="15" class="leftArrow" id="prevAccBtn">
+					<div id="accessories">
+						<div><img src="/images/img1.png" height="75" width="75"></div>
+						<div><img src="/images/img2.png" height="75" width="75"></div>
+						<div><img src="/images/img3.png" height="75" width="75"></div>
+						<div><img src="/images/img4.png" height="75" width="75"></div>
+						<div><img src="/images/img5.png" height="75" width="75"></div>
+						<div><img src="/images/img6.png" height="75" width="75"></div>
+					</div>
+				<img src="/images/navArrow.png" height="50" width="15" class="rightArrow" id="nextAccBtn">
 			</div>
 		<div>
 
 	</div>
 </div>
+{{!-- =======
+<div><p id="name">Welcome {{firstname}}!</p></div>
+
+<div class="temp-container">
+  <div id="low" class="temp-item"><p class="title">low</p><p id="numLow">67<span id="lowF">&deg;F</span></p></div>
+  <div id="current" class="temp-item"><p class="title">It is currently</p><p id="numCurrent">67<span id="currentF">&deg;F</span></p><p class="title" id="location">in Chicago, IL</p></div>
+  <div id="high" class="temp-item"><p class="title">high</p><p id="numHigh">67<span id="highF">&deg;F</span></p></div>
+</div>
+
+<div class="image-container">
+  <div class="image"><img></div>
+  <div class="image"><p id="description"></p></div>
+</div>
+
+<div class="button-container">
+  <div id="button">Change Location</div>
+</div>
+
+<div class="outfit-container">
+  <div class="outfit-item">
+    <p class="subhead">Recommended Outfits</p>
+  </div>
+  <div class="outfit-item">
+    <p class="subhead">Recommended Accessories</p>
+  </div>
+</div>
+>>>>>>> ffb5517f510e55fa2f89fa6c5e2a0fb0bec4a721 --}}
