@@ -1,6 +1,7 @@
-var mongoose = require('mongoose');
-var connectionString = 'mongodb://obajuluwa3:asdfghjkl003@ds153412.mlab.com:53412/odunayodb'
+require('dotenv').config();
 
+var mongoose = require('mongoose');
+var connectionString = process.env.DB_HOST;
 mongoose.connect(connectionString);
 
 mongoose.connection.on('connected', function(){
