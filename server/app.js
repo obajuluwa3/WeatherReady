@@ -7,6 +7,8 @@ var path = require('path');
 var mongoose = require('mongoose');
 var session = require('express-session');
 
+var port_number = server.listen(process.env.PORT || 3000);
+
 require('./db/db');
 
 var UserController = require('./controllers/UserController');
@@ -25,8 +27,8 @@ app.get('/', function(request, response) {
 
 app.use('/users', UserController);
 
-server.listen(3000, function(){
-	console.log("Listening on port 3000");
+server.listen(port_number, function(){
+	console.log("Listening on" + port_number);
 });
 
 
