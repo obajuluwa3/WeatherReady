@@ -15,7 +15,7 @@ An application that recommends outfit options to users based on the weather in t
 * User can change the location to see relevant outfits by clicking "change location" button
 
 ## Initial Wireframe
-![alt text](https://obajuluwa3.github.io/3-Card-Monte/3-Card-Monte-wireframe.jpg "wireframe")
+![alt text](https://github.com/obajuluwa3/Project2/Dress for the Weather App.jpg "wireframe")
 
 
 ## Technologies Used
