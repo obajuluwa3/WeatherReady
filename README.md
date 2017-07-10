@@ -1,5 +1,5 @@
 # Project 2 - Weather Ready App
-*Created by Annie Wiedner & Odunayo Obajuluwa - June 16, 2017*
+*Created by Annie Wiedner & Odunayo Obajuluwa - July 10, 2017*
 
  **General Assembly, Chicago - WDI Course**
 
