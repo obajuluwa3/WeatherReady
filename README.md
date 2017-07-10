@@ -38,6 +38,7 @@ Check out my Project 2 Trello Board [here](https://trello.com/b/vurqiHcH).
 * We would also like to add functionality to allow users to enter a time-frame
 * Make app fully ready for mobile usage
 * Build out a version of the app for web
+* Add picture uploading functionality
 
 ### Inspirations & References
 - www.freepik.com
