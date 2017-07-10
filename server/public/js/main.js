@@ -1,3 +1,5 @@
+
+
 // add slick slider to display outfits
 $(document).ready(function(){
   $('#outfits').slick({
@@ -111,6 +113,8 @@ var mensSweaters = ['/images/mens/sweater1.png', '/images/mens/sweater2.png', '/
 
 var womenSweaterIndex = Math.floor((Math.random() * womensSweaters.length));
 var menSweaterIndex = Math.floor((Math.random() * mensSweaters.length));
+var menSweater2Index = Math.floor((Math.random() * mensSweaters.length));
+
 
 var womensTees = ['/images/womens/tee1.png', '/images/womens/tee2.png', '/images/womens/tee3.png', '/images/womens/tee4.png', '/images/womens/tee5.png'];
 var mensTees = ['/images/mens/tee1.png', '/images/mens/tee2.png', '/images/mens/tee3.png', '/images/mens/tee4.png'];
@@ -139,7 +143,7 @@ var getWeather = function() {
       $('.weatherImg').attr('id', 'icon');
       var description = response.weather[0].main;
       $('#description').html(description);
-      if (response.main.temp >= 80 && (response.cod === 200 || response.cod === 201 || response.cod === 202 || response.cod === 210 || response.cod === 211 || response.cod === 212 || response.cod === 221 || response.cod === 230 || response.cod === 231 || response.cod === 232 || response.cod === 300 || response.cod === 301 || response.cod === 302 || response.cod === 310 || response.cod === 311 || response.cod === 312 || response.cod === 313 || response.cod === 314 || response.cod === 321 || response.cod === 500 || response.cod === 501 || response.cod === 502 || response.cod === 503 || response.cod === 504 || response.cod === 511 || response.cod === 520 || response.cod === 521 || response.cod === 522 || response.cod === 531)) {
+      if (response.main.temp >= 69 && (response.cod === 200 || response.cod === 201 || response.cod === 202 || response.cod === 210 || response.cod === 211 || response.cod === 212 || response.cod === 221 || response.cod === 230 || response.cod === 231 || response.cod === 232 || response.cod === 300 || response.cod === 301 || response.cod === 302 || response.cod === 310 || response.cod === 311 || response.cod === 312 || response.cod === 313 || response.cod === 314 || response.cod === 321 || response.cod === 500 || response.cod === 501 || response.cod === 502 || response.cod === 503 || response.cod === 504 || response.cod === 511 || response.cod === 520 || response.cod === 521 || response.cod === 522 || response.cod === 531)) {
         $('#topImg').append('<img src=' + '"' + womensTees[womenTeeIndex] + '"' + 'height="100" width="100">');
         $('#bottomImg').append('<img src=' + '"' + womensShorts[womenShortIndex] + '"' + 'height="100" width="100">');
         $('#shoeImg').append('<img src="/images/womens/shoe2.png" height="100" width="100">');
@@ -150,10 +154,10 @@ var getWeather = function() {
         $('#acc2').append('<img src="/images/womens/accessory3.png" height="50" width="50">')
         $('#acc3').append('<img src="/images/womens/accessory16.png" height="50" width="50">')
       }
-      else if (response.main.temp >= 80) {
+      else if (response.main.temp >= 69) {
         $('#topImg').append('<img src=' + '"' + womensTees[womenTeeIndex] + '"' + 'height="100" width="100">');
         $('#bottomImg').append('<img src=' + '"' + womensShorts[womenShortIndex] + '"' + 'height="100" width="100">');
-        $('#shoeImg').append('<img src="/images/womens/shoe2.png" height="100" width="100">');
+        $('#shoeImg').append('<img src='+ '"' + mensShoes[menShoeIndex] + '"' + 'height="100" width="100">');
         $('#top2Img').append('<img src=' + '"' + womensTees[womenTee2Index] + '"' + 'height="100" width="100">');
         $('#bottom2Img').append('<img src=' + '"' + womensShorts[womenShort2Index] + '"' + 'height="100" width="100">');
         $('#jacketImg').append('<img src="/images/womens/jacket3.png" height="100" width="100">')
@@ -161,21 +165,22 @@ var getWeather = function() {
         $('#acc2').append('<img src="/images/womens/accessory3.png" height="50" width="50">')
         $('#acc3').append('<img src="/images/womens/accessory16.png" height="50" width="50">')
       }
-      else if (response.main.temp > 50 && (response.cod === 200 || response.cod === 201 || response.cod === 202 || response.cod === 210 || response.cod === 211 || response.cod === 212 || response.cod === 221 || response.cod === 230 || response.cod === 231 || response.cod === 232 || response.cod === 300 || response.cod === 301 || response.cod === 302 || response.cod === 310 || response.cod === 311 || response.cod === 312 || response.cod === 313 || response.cod === 314 || response.cod === 321 || response.cod === 500 || response.cod === 501 || response.cod === 502 || response.cod === 503 || response.cod === 504 || response.cod === 511 || response.cod === 520 || response.cod === 521 || response.cod === 522 || response.cod === 531)) {
-        $('#topImg').append('<img src=' + '"' + mensTees[menTeeIndex] + '"' + 'height="100" width="100">');
-        $('#bottomImg').append('<img src=' + '"' + mensPants[menPantIndex] + '"' + 'height="100" width="100">');
+      else if (response.main.temp >= 40 && (response.cod === 200 || response.cod === 201 || response.cod === 202 || response.cod === 210 || response.cod === 211 || response.cod === 212 || response.cod === 221 || response.cod === 230 || response.cod === 231 || response.cod === 232 || response.cod === 300 || response.cod === 301 || response.cod === 302 || response.cod === 310 || response.cod === 311 || response.cod === 312 || response.cod === 313 || response.cod === 314 || response.cod === 321 || response.cod === 500 || response.cod === 501 || response.cod === 502 || response.cod === 503 || response.cod === 504 || response.cod === 511 || response.cod === 520 || response.cod === 521 || response.cod === 522 || response.cod === 531)) {
+        $('#topImg').append('<img src=' + '"' + mensSweaters[menSweaterIndex] + '"' + 'height="100" width="100">');
+        $('#bottomImg').append('<img src=' + '"' + mensPants[menPantIndex] + '"' + 'height="100" width="70">');
         $('#shoeImg').append('<img src="/images/womens/shoe2.png" height="100" width="100">');
-        $('#top2Img').append('<img src=' + '"' + mensTees[menTee2Index] + '"' + 'height="100" width="100">');
-        $('#bottom2Img').append('<img src=' + '"' + mensPants[menPant2Index] + '"' + 'height="100" width="100">');
+        $('#top2Img').append('<img src=' + '"' + mensSweaters[menSweater2Index] + '"' + 'height="100" width="100">');
+        $('#bottom2Img').append('<img src=' + '"' + mensPants[menPant2Index] + '"' + 'height="100" width="70">');
         $('#jacketImg').append('<img src="/images/womens/jacket3.png" height="100" width="100">')
         $('#acc1').append('<img src="/images/womens/accessory17.png" height="50" width="50">')
         $('#acc2').append('<img src="/images/womens/accessory3.png" height="50" width="50">')
         $('#acc3').append('<img src="/images/womens/accessory16.png" height="50" width="50">')
       }
-      else if (response.main.temp > 50) {
+
+      else if (response.main.temp > 40) {
         $('#bottomImg').append('<img src=' + '"' + mensPants[menPantIndex] + '"' + 'height="100" width="100">');
         $('#shoeImg').append('<img src="/images/womens/shoe2.png" height="100" width="100">');
-        $('#top2Img').append('<img src=' + '"' + womensTees[womenTee2Index] + '"' + 'height="100" width="100">');
+        $('#top2Img').append('<img src=' + '"' + mensSweaters[menSweaterIndex] + '"' + 'height="100" width="100">');
         $('#bottom2Img').append('<img src=' + '"' + mensPants[menPant2Index] + '"' + 'height="100" width="100">');
         $('#jacketImg').append('<img src="/images/womens/jacket3.png" height="100" width="100">')
         $('#acc1').append('<img src="/images/womens/accessory17.png" height="50" width="50">')
@@ -183,26 +188,28 @@ var getWeather = function() {
         $('#acc3').append('<img src="/images/womens/accessory16.png" height="50" width="50">')
       }
 
-      else if (response.main.temp > 30) {
+      else if (response.main.temp <= 40) {
+        $('#topImg').append('<img src=' + '"' + mensSweaters[menSweaterIndex] + '"' + 'height="100" width="100">');
         $('#bottomImg').append('<img src=' + '"' + mensPants[menPantIndex] + '"' + 'height="100" width="100">');
         $('#shoeImg').append('<img src="/images/womens/shoe2.png" height="100" width="100">');
-        $('#top2Img').append('<img src=' + '"' + womensTees[womenTee2Index] + '"' + 'height="100" width="100">');
+        $('#top2Img').append('<img src=' + '"' + mensSweaters[menSweater2Index] + '"' + 'height="100" width="100">');
         $('#bottom2Img').append('<img src=' + '"' + mensPants[menPant2Index] + '"' + 'height="100" width="100">');
-        $('#jacketImg').append('<img src="/images/womens/jacket3.png" height="100" width="100">')
-        $('#acc1').append('<img src="/images/womens/accessory17.png" height="50" width="50">')
-        $('#acc2').append('<img src="/images/womens/accessory3.png" height="50" width="50">')
-        $('#acc3').append('<img src="/images/womens/accessory16.png" height="50" width="50">')
+        $('#jacketImg').append('<img src="/images/mens/jacket4.png" height="100" width="100">')
+        $('#acc1').append('<img src="/images/womens/accessory11.png" height="50" width="50">')
+        $('#acc2').append('<img src="/images/womens/accessory12.png" height="50" width="50">')
+        $('#acc3').append('<img src="/images/womens/accessory20.png" height="50" width="50">')
       }
 
       else  {
+        $('#topImg').append('<img src=' + '"' + mensSweaters[menSweaterIndex] + '"' + 'height="100" width="100">');
         $('#bottomImg').append('<img src=' + '"' + mensPants[menPantIndex] + '"' + 'height="100" width="100">');
-        $('#shoeImg').append('<img src="/images/womens/shoe2.png" height="100" width="100">');
-        $('#top2Img').append('<img src=' + '"' + womensTees[womenTee2Index] + '"' + 'height="100" width="100">');
+        $('#shoeImg').append('<img src="/images/men/shoe1.png" height="100" width="100">');
+        $('#top2Img').append('<img src=' + '"' + mensSweaters[menSweater2Index] + '"' + 'height="100" width="100">');
         $('#bottom2Img').append('<img src=' + '"' + mensPants[menPant2Index] + '"' + 'height="100" width="100">');
-        $('#jacketImg').append('<img src="/images/womens/jacket3.png" height="100" width="100">')
-        $('#acc1').append('<img src="/images/womens/accessory17.png" height="50" width="50">')
-        $('#acc2').append('<img src="/images/womens/accessory3.png" height="50" width="50">')
-        $('#acc3').append('<img src="/images/womens/accessory16.png" height="50" width="50">')
+        $('#jacketImg').append('<img src="/images/mens/jacket4.png" height="100" width="100">')
+        $('#acc1').append('<img src="/images/womens/accessory11.png" height="50" width="50">')
+        $('#acc2').append('<img src="/images/womens/accessory12.png" height="50" width="50">')
+        $('#acc3').append('<img src="/images/womens/accessory20.png" height="50" width="50">')
       }
     }
   })

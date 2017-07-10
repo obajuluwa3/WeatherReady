@@ -196,7 +196,7 @@ form {
 	 height: 175px;
 	 width: 330px;
 	 background-image: url(../images/weatherBg.png);
-	 background-size: 100% 100%;	
+	 background-size: 100% 100%;
 	 background-repeat: no-repeat;
 	 display: flex;
 	 flex-direction: row;
@@ -248,8 +248,8 @@ form {
 
 #city {
 	text-transform: uppercase;
-	// font-weight: bold;
-	font-size: 2.3em;
+	font-weight: bold;
+	font-size: 1.5em;
 	color: white;
 	height: 45px;
 	margin-top: -10;
