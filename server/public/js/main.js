@@ -129,7 +129,7 @@ var menTee2Index = Math.floor((Math.random() * mensTees.length));
 var getWeather = function() {
   $.ajax({
     method: "GET",
-    url: "http://api.openweathermap.org/data/2.5/weather?zip=" + zipCode + ",us&appid=052f26926ae9784c2d677ca7bc5dec98&units=imperial",
+    url: "https://api.openweathermap.org/data/2.5/weather?zip=" + zipCode + ",us&appid=052f26926ae9784c2d677ca7bc5dec98&units=imperial",
     success: function(response) {
       console.log(response);
       var min = Math.round(response.main.temp_min);
