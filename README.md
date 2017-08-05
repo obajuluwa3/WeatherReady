@@ -1,4 +1,4 @@
-# Weather Ready App
+# WeatherReady
 *WDI Project 2 - Created by Annie Wiedner & Odunayo Obajuluwa - July 10, 2017*
 
  **General Assembly, Chicago - WDI Course**
@@ -8,14 +8,6 @@
 
 ## Description
 An application that recommends outfit options to users based on the weather in their current location
-
-**How to Use**
-* User logs in or creates an account
-* Information is displayed based on the location the user entered
-* User can change the location to see relevant outfits by clicking "change location" button
-
-## Initial Wireframe
-![alt text](https://github.com/obajuluwa3/Project2/Dress-for-the-Weather-App.jpg "wireframe")
 
 
 ## Technologies Used
@@ -30,8 +22,9 @@ An application that recommends outfit options to users based on the weather in t
 * Draw.io
 
 ## Project Planning
-This was a pair project so we created a trello board to break down the tasks and divide them out.
-Check out my Project 2 Trello Board [here](https://trello.com/b/vurqiHcH).
+- Created [Wireframes](https://raw.githubusercontent.com/obajuluwa3/WeatherReady/master/Dress%20for%20the%20Weather%20App.jpg)
+- This was a pair project so we created a trello board to break down the tasks and divide them out.
+Check out my Project 2 [Trello Board](https://trello.com/b/vurqiHcH).
 
 ## Possible further development..
 * We would like to add functionality that allows users to store locations
