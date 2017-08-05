@@ -7,7 +7,7 @@
 
 
 ## Description
-An application that recommends outfit options to users based on the weather in their current location
+An full-stack application that recommends outfit options to users based on weather conditions in their current location.
 
 
 ## Technologies Used
